@@ -28,8 +28,7 @@ jobs:
           uses: JamesIves/github-pages-deploy-action@4.0.0
           with:
             github_token: ${{ secrets.PUBLISH_TOKEN }}
-            publish_dir: release/wwwroot
-            allow_empty_commit: false
-            keep_files: false
+            BRANCH: gh-pages
+            FOLDER: release/wwwroot
             # TODO uncomment the following line if you have a custom domain name
             # cname: demo.meziantou.net
